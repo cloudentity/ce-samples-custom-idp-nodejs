@@ -1,0 +1,17 @@
+{
+ "users": [
+  {
+    "identifier": "testsession1",
+    "subscriptionId": "123",
+    "name": "bob",
+    "email": "bob@wonderland.com"
+  },
+  {
+    "identifier": "testsession2",
+    "subscriptionId": "765",
+    "name": "emily",
+    "email": "emily@wonderland.com"
+  }
+ ]
+
+}

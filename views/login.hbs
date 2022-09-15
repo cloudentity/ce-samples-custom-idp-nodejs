@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<title>Sample custom Login app</title>
+</head>
+
+<body style="background-color: #f8f5f3;">
+	<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center mx-auto" style="width: 600px;">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="align-items-center">Custom login application</h5>
+				<h5 class="card-title">Let's get you in there!</h5>
+				<form id="loginForm" action="/submitlogin" method="post">
+					<div class="row">
+						<label for="username"> Username:</label>
+						<input type="text" id="username" name="username">
+						<label for="password"> Password:</label>
+						<input type="text" id="password" name="password">
+					</div>
+					<div class="row">
+						<div class="col">
+							<button type="button" class="text-center btn btn-primary mt-3 float-end"
+								onclick="accept()">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function accept() {
+			document.getElementById('loginForm').submit();
+		}
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
